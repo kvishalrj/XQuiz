@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <style>
+        body {
+            padding: 50px;
+            font-family: Arial, sans-serif;
+        }
+        .quiz-container {
+            max-width: 600px;
+            margin: auto;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        li:hover {
+            background-color: rgb(245, 245, 245);
+            cursor: pointer;
+        }
+        .correct {
+            background-color: rgb(144, 238, 144);
+        }
+        .button-container {
+            text-align: right;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz App</h1>
+        <p id="question"></p>
+        <ul id="answer-list">
+            <!-- Answer options will be injected here -->
+        </ul>
+        <button id="submit">Submit</button>
+        <button id="next">Next</button>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
